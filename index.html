@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>jQuery Filter on the table plugin</title>
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/fott.css">
+</head>
+<body>
+	<div class="row text-center">
+		<div class="col-sm-6 col-sm-offset-3">
+			<h3> Oi! :)</h3>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-sm-6 col-sm-offset-3">
+			<table class="table table-bordered table-hover table-striped">
+                <thead>
+                    <tr>
+                        <th class="filterid">ID</th>
+                        <th class="filtername">Nome</th>
+                    </tr>
+                </thead>
+                <tbody>
+                	<tr>
+                        <td class="account-id"><a class="sort-value" href="http://localhost.com.br/pw_hairbook/admin/usershb/single/137" target="_blank">137</a></td>
+                        <td class="account-name sort-value">Fabiano Araujo</a></td>
+                    </tr>
+                	<tr>
+                        <td class="account-id"><a class="sort-value" href="#" target="_blank">138</a></td>
+                        <td class="account-name sort-value">Teste teste teste</a></td>
+                    </tr>
+                	<tr>
+                        <td class="account-id"><a class="sort-value" href="#" target="_blank">139</a></td>
+                        <td class="account-name sort-value">123</a></td>
+                    </tr>
+                </tbody>
+            </table>
+		</div>
+	</div>
+	
+	<script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+	<script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+	<script src="js/jquery.fott.js"></script>
+	<script>
+		$('.filterid').fott({fieldFilter: 'account-id'});
+		$('.filtername').fott({fieldFilter: 'account-name'});
+	</script>
+</body>
+</html>
