@@ -32,8 +32,8 @@
   $.fn.fott = function(custom){
     var options = $.extend({
       strict          : false,
-      wrapperClasses  : 'sorter',
-      inputClasses    : 'form-control input-fott input-fott-md',
+      wrapperClasses  : 'filter',
+      inputClasses    : 'input-fott',
       fieldFilter     : $(this).html().toLowerCase(),
       placeholder     : 'Filter for ' + $(this).html(),
       table           : $(this).parent().parent().parent()
@@ -41,7 +41,18 @@
     html    = {
       div : $('<div></div>'),
       input: $('<input type="text">')
+    },
+    mustHave = {
+      wrapperClass : 'filter',
+      inputClass   : 'input-fott'
     };
+
+    if (options.wrapperClasses.indexOf(mustHave.wrapperClass) < 0)
+      options.wrapperClasses = options.wrapperClasses.trim() + ' ' +  mustHave.wrapperClass;
+
+    if (options.inputClasses.indexOf(mustHave.inputClass) < 0)
+      options.inputClasses = options.inputClasses.trim() + ' ' +  mustHave.inputClass;
+
     options.rows = options.table.find('tbody').find('tr');
 
     // Building div and input
@@ -53,7 +64,7 @@
 
     // Attach events to input field   
     html.input.keyup(function(){
-      var value = $(this).val();
+      var value = $(this).val().toLowerCase();
 
       // If value is empty, there is no need
       // for loop through everything
@@ -80,7 +91,7 @@
               lookAt;
 
           // Check for the element that has value to be compared
-          lookAt = td.hasClass('sort-value') ? td : td.find('.sort-value');
+          lookAt = td.hasClass('filter-value') ? td : td.find('.filter-value');
 
           // Search based on strict value
           if (options.strict)
