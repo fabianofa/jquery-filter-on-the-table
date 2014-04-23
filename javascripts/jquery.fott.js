@@ -1,7 +1,7 @@
 /**
  *
- * Filter on the Table 1.0 - Filter field on table headers.
- * Version 1.0
+ * Filter on the Table 0.1.0 - Filter field on table headers.
+ * Version 0.1.0
  * @requires jQuery v1.7.0
  * 
  * http://www.opensource.org/licenses/mit-license.php
