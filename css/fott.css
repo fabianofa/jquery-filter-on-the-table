@@ -1,4 +1,4 @@
-.sorter{
+.filter{
 	display: inline;
 	margin-left: 15px;
 }
@@ -11,7 +11,7 @@
 	font-weight: normal;
 }
 
-.input-fott-md {
+.input-md {
 	width: 100px;
 }
 
