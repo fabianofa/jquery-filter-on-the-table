@@ -1,0 +1,20 @@
+.filter{
+	display: inline;
+	margin-left: 15px;
+}
+
+.input-fott{
+	display: inline;
+	height: 25px;
+	padding: 2px;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+.input-md {
+	width: 100px;
+}
+
+.input-fott-wide {
+	width: 120px;
+}
