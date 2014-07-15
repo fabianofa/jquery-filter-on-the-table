@@ -7,4 +7,4 @@ Everything you want to know is at: http://fabianofa.github.io/jquery-filter-on-t
 Contact
 =====
 
-Of course you can contact me by tweeting or direct message to @latoquita (https://twitter.com/fabianodev)
+Of course you can contact me by tweeting @fabianodev (https://twitter.com/fabianodev)
