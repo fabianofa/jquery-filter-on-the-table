@@ -28,7 +28,6 @@
 				<ol>
 					<li><a href="#intro">Introduction</a></li>
 					<li><a href="#started">Gettings started</a></li>
-
 					<li><a href="#examples">Examples</a></li>
 					<li><a href="#download">Download</a></li>
 					<li><a href="#documentation">Documentation</a></li>
@@ -41,7 +40,7 @@
 			<div class="col-sm-8 col-sm-offset-2">
 				<h3>Introduction </h3>
 				<p>Fott (Filter on the table), is a jQuery plugin that adds a <code>&lt;input type="text"&gt;</code> element to <code>&lt;th&gt;</code> selected.</p>
-				<p>It searches for inner html of a element with <code>.filter-value</code> and compare with inputed value.</p>
+				<p>It searches for inner html of an element with <code>.filter-value</code> and compare with inputted value.</p>
 				<p>It was tested with 3000 rows, but it is safer to use below than 1000, depending on the number of columns.</p>
 				<hr>
 			</div>
@@ -58,7 +57,7 @@
 				<pre>...<br>&lt;body&gt;<br>...<br>&lt;table&gt;<br>&lt;thead&gt;<br><br>&lt;th class=&quot;filterid&quot;&gt;ID&lt;/th&gt;<br>&lt;th class=&quot;filtername&quot;&gt;Name&lt;/th&gt;<br><br>&lt;/thead&gt;<br>&lt;/table&gt;</tr><br>...<br></pre>
 				<pre>$('.filterid').fott({fieldFilter: 'account-id'});</pre>
 				
-				<p><strong>Fott</strong> will then search for a <code>&lt;td&gt;</code> with <code>class="account-name"</code></p>
+				<p><strong>Fott</strong> will then search for a <code>&lt;td&gt;</code> with <code>class="account-id"</code></p>
 				<p>Finding the cell, <strong>Fott</strong> will then search for a element with <code>class="filter-value"</code>. The inner value of this element will be used for filtering. You can also set the <code>&lt;td&gt;</code> itself with <code>class="filter-value"</code>, such as:</p>
 				<pre>&lt;td class=&quot;account-name filter-value&quot;&gt;Some value&lt;/td&gt;</pre>
 
